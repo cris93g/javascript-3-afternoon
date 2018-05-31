@@ -69,6 +69,12 @@ class Manager extends Employee {
   makeWidget() {
     super.makeWidget();
   }
+  hire(employee) {
+    this.reports.push(employee);
+  }
+  fire(index) {
+    this.reports.splice(index, 1);
+  }
 }
 
 ////////// PROBLEM 3 //////////
