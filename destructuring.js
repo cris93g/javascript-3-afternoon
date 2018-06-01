@@ -10,22 +10,19 @@
 
 // Do not edit the code below.
 var carDetails = {
-  color: 'red',
-  make: 'toyota',
-  model: 'tacoma',
+  color: "red",
+  make: "toyota",
+  model: "tacoma",
   year: 1994
-}
+};
 // Do not edit the code above.
 
 /*
   Use object destructuring to save the property values from the object carDetails into new variables. 
 */
 
-//Code Here 
-const {color,make,model,year}=carDetails;
-
-
-
+//Code Here
+const { color, make, model, year } = carDetails;
 
 ////////// PROBLEM 2 //////////
 
@@ -35,16 +32,13 @@ const {color,make,model,year}=carDetails;
   The property names are firstName, lastName, and title.
 */
 
-function greeting( obj ) {
-  var {firstname, lastName, title} = obj
-  
+function greeting(obj) {
+  let { firstName, lastName, title } = obj;
+
   // Do not edit the code below.
-  return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
+  return "Hello, " + title + " " + firstName + " " + lastName + "!";
   // Do not edit the code above.
 }
-
-
-
 
 ////////// PROBLEM 3 //////////
 
@@ -57,9 +51,11 @@ function greeting( obj ) {
 */
 
 //Code Here
-
-
-
+var totalPopulation = object => {
+  var states = ({ utah, california, texas, arizona } = object);
+  return states;
+};
+totalPopulation({ utah: 55, california: 235, texas: 193, arizona: 57 });
 ////////// PROBLEM 4 //////////
 
 /*
@@ -71,8 +67,6 @@ function greeting( obj ) {
 */
 
 //Code Here
-
-
 
 ////////// PROBLEM 5 //////////
 
@@ -90,8 +84,6 @@ function greeting( obj ) {
 
 //Code Here
 
-
-
 ////////// PROBLEM 6 //////////
 
 /*
@@ -101,5 +93,3 @@ function greeting( obj ) {
 */
 
 //Code Here
-
-
